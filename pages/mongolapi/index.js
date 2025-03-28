@@ -67,7 +67,7 @@ export default function Home() {
         <div className={`grid gap-8 ${isGrid ? "grid-cols-1" : "grid-cols-3"}`}>
           {filteredData.map((item, index) => (
             <div key={index} className="bg-white p-6 rounded-lg hover:shadow-xl transition duration-300 border-4 border-pink-500">
-              <h2 className="text-xl font-bold">{item?.name}</h2>
+             - <h2 className="text-xl font-bold">{item?.name}</h2>
               <p className="text-black mt-2">{item?.description}</p>
               <p className="opacity-75 text-center">{item?.address?.country}</p> 
 

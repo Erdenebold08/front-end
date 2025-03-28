@@ -6,7 +6,7 @@ const data = [
   { id: 2, name: "Temuugei",age:"age:17", height:"height:180+cm", weight:"weight:68kg" },
   { id: 3, name: "Bill",age:"age:16", height:"height:180+cm", weight:"weight:68kg" },
   { id: 4, name: "Temulen", age:"age:19", height:"height:160cm", weight:"weight:78kg" },
-  { id: 5, name: "Boldoo", age:"age:16", height:"height:180cm", weight:"weight:65kg" },
+  { id: 5, name: "NIGGA", age:"age:21", height:"height:100cm", weight:"weight:165kg" },
   { id: 6, name: "Khangarid", age:"age:21", height:"height:180+cm", weight:"weight:45kg" },
   { id: 7, name: "Chinbiligt", age:"age:16", height:"height:180+cm", weight:"weight:45kg" },
   { id: 8, name: "Erdenejargal", age:"age:17", height:"height:180+cm", weight:"weight:100kg" },
@@ -56,11 +56,8 @@ export default function Sfilter() {
                   <p className="mt-4 text-xl text-opacity-60 text-white pl-2">{data.age}</p>
                   <p className="mt-4 text-xl text-opacity-60 text-white pl-2">{data.height}</p>
                   <p className="mt-4 text-xl text-opacity-60 text-white pl-2">{data.weight}</p>
-                  </div>
-                 
-                  
+                  </div> 
                 </div>
-
               ))
         ): <div className="text-white text-lg">Хайлт олдсонгүй : {search}</div>}</div>
         

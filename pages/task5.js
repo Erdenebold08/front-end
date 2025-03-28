@@ -70,9 +70,9 @@ export default function Home() {
                 <p className="text-gray-600">{items.description}</p>
                 </div>
             ))}
-            {data.map((data) => {
-                return <div>temuujin</div>
-            })}
+           {data.map((item, index) => {
+    return <div key={index}>temuujin</div>
+})}
         </div>
     </div>
   );

@@ -50,7 +50,7 @@ export default function Sfilter() {
       <div >
         <div className={`mt-8 flex flex-col gap-4 ${grid ? "grid grid-cols-2 gap-4 " : ""}`}>{filteredData.length > 0 ? (
             filteredData.map((data) => (
-                <div className="w-full h-[120px] rounded-lg bg-rose-500 hover:animate-pulse mt-8 shadow-lg">
+                <div className="w-full h-[120px] rounded-lg bg-rose-500 hover:animate-pulse mt-8 shadow-lg" key={data.id}>
                   <p className="text-lg text-white font-bold text-opacity-80 pl-2">{data.name}</p>
                   <div className="flex">
                   <p className="mt-4 text-xl text-opacity-60 text-white pl-2">{data.age}</p>

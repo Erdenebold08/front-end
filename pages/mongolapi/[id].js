@@ -38,19 +38,19 @@ export default function ID() {
                 back
             </button>
             {(data || []).map((item, index) =>
-            router.query.id === item.id ?(
-                <div>
-                    {item.id} {item.name} {item.description}
-                    <img src={item?.images} className="w-48"/>
-                </div>
-                
-            ) : (
-                <p>
-                    {index == 1 &&
-                    `${router.query.id} ene ni id-tai hereglegch oldsongui`}
-                </p>
-            )
-            )}
+  router.query.id === item.id ? (
+    <div key={item.id}> {/* Use a unique identifier as the key */}
+      {item.id} {item.name} {item.description}
+      <img src={item?.images} className="w-48" />
+    </div>
+  ) : (
+    <p key={index}> {/* Use index here if there's no unique ID */}
+      {index === 1 &&
+        `${router.query.id} ene ni id-tai hereglegch oldsongui`}
+    </p>
+  )
+)}
+
         </div>
     )
 }

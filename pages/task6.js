@@ -40,23 +40,23 @@ export default function Users() {
         />
       </div>
       <div className="grid gap-4">
-        {filteredUsers.length > 0 ? (
-          filteredUsers.map((user) => (
-            <div 
-            key={user.id}
-            className="bg-white shadow-md rounded-lg p-4 flex justidy-center items-center"
-            >
-                <div>
-                 <p className="text-lg font-medium">{user.name}</p>
-                 <p className=" text-sm text-gray-500">{user.email}</p>
-                </div>
-            </div>
-          
-          ))
-        ) : (
-          <div>hereglegch oldohgui been</div>
-        )}
+  {filteredUsers.length > 0 ? (
+    filteredUsers.map((user) => (
+      <div 
+        key={user.id} 
+        className="bg-white shadow-md rounded-lg p-4 flex justify-center items-center"
+      >
+        <div>
+          <p className="text-lg font-medium">{user.name}</p>
+          <p className="text-sm text-gray-500">{user.email}</p>
+        </div>
       </div>
+    ))
+  ) : (
+    <div>hereglegch oldohgui been</div> 
+  )}
+</div>
+
     </div>
   );
 }
